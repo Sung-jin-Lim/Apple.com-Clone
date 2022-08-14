@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+img.macsuper {
+  width: 23rem;
+  height: auto;
+}
+
+/* @font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 100;
+  src: local("☺"), url("/public/fonts/SF-Pro.dmg") format("woff2"); */
+
+/* (C) 2019 Apple Inc. All rights reserved.
+ */
+/* } */
+.nav-items {
+  opacity: 80%;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.mac-air {
+  background-position-y: -2.3rem;
+  background-image: url("https://www.apple.com/v/home/aq/images/heroes/macbook-air/hero_macbookair__el7scava26mq_large.png");
+}
+
+.iphone-13 {
+  background-image: url("https://www.apple.com/v/home/aq/images/heroes/iphone-13/hero_iphone13_avail__gnqqkzuai6um_large.jpg");
+}
+
+/* second grid */
+
+.iphone-13-2 {
+  background-image: url("https://www.apple.com/v/home/aq/images/promos/iphone-13-pro/promo_iphone13pro_avail__beadms4ldidu_large.jpg");
+}
+
+.macbook-pro-13 {
+  background: url("https://www.apple.com/v/home/aq/images/promos/macbook-pro-13/promo_mbp13__buwssod6c8vm_large.jpg");
+  background-position: center;
+}
+.ipad-air-2 {
+  background-image: url("https://www.apple.com/v/home/aq/images/promos/ipad-air/promo_ipadair_avail__ferd4bfpcdm6_large.jpg");
+}
+.apple-watch {
+  background-image: url("https://www.apple.com/v/home/aq/images/promos/watch-series-7/promo_watch_lte__djeaso7ukrsm_large.jpg");
+}
+.apple-card {
+  background-image: url("https://www.apple.com/v/home/aq/images/promos/apple-card/tile__cauwwcyyn9hy_large.jpg");
+}
+.airpods {
+  background-image: url("https://www.apple.com/v/home/aq/images/promos/airpods-spatial/promo_airpods_spatial__cak1sq3kb1w2_large.jpg");
+}
