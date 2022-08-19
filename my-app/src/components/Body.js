@@ -1,7 +1,15 @@
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import React from "react";
+import Slider from "react-slick";
+import SimpleSlider from "./SimpleSlider";
+
+// slider
+
 function Body() {
   return (
     <div className="Body">
-      <div className="Body-container1 grid grid-rows-3 gap-4 tracking-tighter">
+      <div className="Body-container1 grid grid-rows-3 gap-3 tracking-tighter">
         <div className="mac flex flex-col	gap-3 justify-center py-10 items-center bg-[#F5F5F7] ">
           <i className="text-6xl font-semibold z-2 ">
             Get <span className="text-pink-600">supercharged</span> for college
@@ -51,8 +59,8 @@ function Body() {
           </div>
         </div>
       </div>
-      <div className="Body-container2 grid grid-rows-3 grid-cols-2 gap-4 mt-4">
-        <div className="iphone-13-2 flex flex-col bg-bottom bg-[#FBFBFD] bg-no-repeat items-center gap-2 py-10 h-[36rem]">
+      <div className="Body-container2 grid grid-rows-3 grid-cols-2 gap-3 mt-4 ">
+        <div className="iphone-13-2 flex flex-col bg-bottom bg-[#FBFBFD] bg-no-repeat items-center gap-2 py-10 h-[36rem] transition ease-out-in duration-1000	hover:-translate-y-5 hover:scale-90 ">
           <h1 className="text-4xl font-semibold">iPhone 13 Pro</h1>
           <p className="text-xl ">Oh. So. Pro.</p>
           <span className="flex gap-6 text-lg">
@@ -64,7 +72,7 @@ function Body() {
             </a>
           </span>
         </div>
-        <div className="macbook-pro-13 flex flex-col  bg-no-repeat items-center gap-2 py-10 h-[36rem] text-white">
+        <div className="macbook-pro-13 flex flex-col  bg-no-repeat items-center gap-2 py-10 h-[36rem] text-white transition ease-out-in duration-1000	hover:-translate-y-5 hover:scale-90 ">
           <h1 className="text-4xl font-semibold">MacBook Pro 13"</h1>
           <p className="text-xl flex flex-row items-center gap-1">
             Supercharged by <img src="/m1-2.png" alt="m2" className="h-8 relative top-1" />
@@ -78,7 +86,7 @@ function Body() {
             </a>
           </span>
         </div>
-        <div className="apple-watch flex flex-col bg-repeat bg-bottom bg-[#FBFBFD] bg-no-repeat items-center gap-2 py-10 h-[36rem]">
+        <div className="apple-watch flex flex-col bg-repeat bg-bottom bg-[#FBFBFD] bg-no-repeat items-center gap-2 py-10 h-[36rem] transition ease-out-in duration-1000	hover:-translate-y-5 hover:scale-90 ">
           <h1 className="text-4xl font-semibold">
             <img
               src="https://www.apple.com/v/home/aq/images/logos/watch-series-7/promo_logo_watch_lte__emrof7zzkriq_large.png"
@@ -95,7 +103,7 @@ function Body() {
             </a>
           </span>
         </div>
-        <div className="ipad-air-2 flex flex-col bg-repeat bg-bottom bg-[#FBFBFD] bg-no-repeat items-center gap-2 py-10 h-[36rem] text-white">
+        <div className="ipad-air-2 flex flex-col bg-repeat bg-bottom bg-[#FBFBFD] bg-no-repeat items-center gap-2 py-10 h-[36rem] text-white transition ease-out-in duration-1000	hover:-translate-y-5 hover:scale-90 ">
           <h1 className="text-4xl font-semibold">
             <img
               src="https://www.apple.com/v/home/aq/images/logos/ipad-air/promo_logo_ipadair__frwnnsqveeye_large.png"
@@ -112,7 +120,7 @@ function Body() {
             </a>
           </span>
         </div>
-        <div className="apple-card flex flex-col bg-repeat bg-bottom bg-[#FBFBFD] bg-no-repeat items-center gap-2 py-10 h-[36rem]">
+        <div className="apple-card flex flex-col bg-repeat bg-bottom bg-[#FBFBFD] bg-no-repeat items-center gap-2 py-10 h-[36rem] transition ease-out-in duration-1000	hover:-translate-y-5 hover:scale-90 ">
           <h1 className="text-4xl font-semibold">
             <img
               src="https://www.apple.com/v/home/aq/images/logos/apple-card/logo__dcojfwkzna2q_large.png"
@@ -131,7 +139,7 @@ function Body() {
             </a>
           </span>
         </div>
-        <div className="airpods flex flex-col bg-repeat bg-bottom bg-[#FBFBFD] bg-no-repeat justify-end items-center gap-2 py-10 h-[36rem] text-white">
+        <div className="airpods flex flex-col bg-repeat bg-bottom bg-[#FBFBFD] bg-no-repeat justify-end items-center gap-2 py-10 h-[36rem] text-white transition ease-out-in duration-1000	hover:-translate-y-5 hover:scale-90 ">
           <h1 className="text-4xl font-semibold">AirPods</h1>
           <p className="text-xl ">with Spatial Audio</p>
           <span className="flex gap-6 text-lg">
@@ -140,138 +148,7 @@ function Body() {
           </span>
         </div>
       </div>
-      <div id="indicators-carousel" class="relative" data-carousel="static">
-        {/* <!-- Carousel wrapper --> */}
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-          {/* <!-- Item 1 --> */}
-          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-            <img
-              src="https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/689x387.jpg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-          {/* <!-- Item 2 --> */}
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/689x387.jpg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-          {/* <!-- Item 3 --> */}
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/689x387.jpg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-          {/* <!-- Item 4 --> */}
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/689x387.jpg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-          {/* <!-- Item 5 --> */}
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/689x387.jpg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-        </div>
-        {/* <!-- Slider indicators --> */}
-        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full"
-            aria-current="true"
-            aria-label="Slide 1"
-            data-carousel-slide-to="0"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 2"
-            data-carousel-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 3"
-            data-carousel-slide-to="2"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 4"
-            data-carousel-slide-to="3"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 5"
-            data-carousel-slide-to="4"
-          ></button>
-        </div>
-        {/* <!-- Slider controls --> */}
-        <button
-          type="button"
-          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev
-        >
-          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              aria-hidden="true"
-              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 19l-7-7 7-7"
-              ></path>
-            </svg>
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-        <button
-          type="button"
-          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next
-        >
-          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              aria-hidden="true"
-              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              ></path>
-            </svg>
-            <span class="sr-only">Next</span>
-          </span>
-        </button>
-      </div>
+      <SimpleSlider />
     </div>
   );
 }

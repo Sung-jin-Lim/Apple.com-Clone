@@ -57,3 +57,32 @@ img.macsuper {
 .airpods {
   background-image: url("https://www.apple.com/v/home/aq/images/promos/airpods-spatial/promo_airpods_spatial__cak1sq3kb1w2_large.jpg");
 }
+
+/* carousel */
+/* .slick-slide > img {
+  color: white;
+  margin: 10px;
+  padding: 20%;
+  position: relative;
+} */
+
+.slick-slide {
+  margin-top: 10px;
+}
+
+div.slick-track {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.slick-slide {
+  box-sizing: border-box;
+  width: 50vw;
+  opacity: 0.5;
+  transition: all 300ms ease;
+}
+div.slick-active {
+  opacity: 1;
+  transition: all 300ms ease;
+}
