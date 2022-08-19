@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="Footer flex flex-col items-center justify-center bg-[#F5F5F7] py-4">
+    <div className="Footer flex flex-col items-center justify-center bg-[#F5F5F7] py-4 mt-[35px]">
       <div class="text-gray-600 text-xs max-w-5xl">
         1. Qualified Purchasers receive an Apple Gift Card when they purchase an eligible Mac or
         iPad at a Qualifying Location. Only one Apple Gift Card per eligible Mac or iPad per
@@ -38,7 +38,7 @@ function Footer() {
         <br />
         To access and use all the features of Apple Card, you must add Apple Card to Wallet on an
         iPhone or iPad with the latest version of iOS or iPadOS. Update to the latest version by
-        going to Settings > General > Software Update. Tap Download and Install. Available for
+        going to Settings &gt General &gt Software Update. Tap Download and Install. Available for
         qualifying applicants in the United States. Apple Card is issued by Goldman Sachs Bank USA,
         Salt Lake City Branch. Learn more about how Apple Card applications are evaluated at
         support.apple.com/kb/HT209218.

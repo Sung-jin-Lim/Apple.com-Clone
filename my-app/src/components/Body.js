@@ -148,7 +148,15 @@ function Body() {
           </span>
         </div>
       </div>
-      <SimpleSlider />
+      <div>
+        <SimpleSlider />
+        <button
+          // onClick={slickPause}
+          className="absolute right-2"
+        >
+          <img src="play.jpg" alt="" className="w-7 relative top-0.5 right-3" />
+        </button>
+      </div>
     </div>
   );
 }

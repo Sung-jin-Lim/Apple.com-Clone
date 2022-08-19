@@ -86,3 +86,17 @@ div.slick-active {
   opacity: 1;
   transition: all 300ms ease;
 }
+/* .slick-dots > li > button {
+  font-size: 9px;
+} */
+ul.slick-dots li button::before {
+  font-size: 9.3px;
+}
+
+ul.slick-dots {
+  bottom: -29px;
+}
+
+ul.slick-dots li {
+  width: 13px;
+}
