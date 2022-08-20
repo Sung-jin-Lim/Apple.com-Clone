@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <div className="Footer flex flex-col items-center justify-center bg-[#F5F5F7] py-4 mt-[35px]">
-      <div class="text-gray-600 text-xs max-w-5xl">
+      <div className="text-gray-600 text-xs max-w-5xl">
         1. Qualified Purchasers receive an Apple Gift Card when they purchase an eligible Mac or
         iPad at a Qualifying Location. Only one Apple Gift Card per eligible Mac or iPad per
         Qualified Purchaser. Offer subject to availability. While supplies last. Qualified
@@ -47,7 +47,7 @@ function Footer() {
         Major League Baseball trademarks and copyrights are used with permission of MLB Advanced
         Media, L.P. All rights reserved.
       </div>
-    </div>
+    </div >
   );
 }
 

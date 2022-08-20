@@ -1,14 +1,16 @@
 import React from "react";
 import Slider from "react-slick";
 // import state
-import { useState } from "react";
+// import { useState } from "react";
 
 // state that checks pause of the slider
-// const [pause, setPause] = useState(false);
 
 
 
-export default function SimpleSlider() {
+export default function SimpleSlider(props) {
+
+  // const [pause, setPause] = useState(false);
+
   var settings = {
     dots: true,
     infinite: true,
@@ -16,7 +18,7 @@ export default function SimpleSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplaySpeed: 4000,
-    // autoplay: { pause },
+    autoplay: props.play,
     arrows: false,
     draggable: false,
     pauseOnHover: false,
@@ -27,8 +29,10 @@ export default function SimpleSlider() {
 
     adaptiveHeight: true,
   };
+
+  // console.log(...settings)
   return (
-    <Slider {...settings} autoplay='false'>
+    <Slider {...settings} >
       {/* <div className="bg-[url('https://www.apple.com/v/home/aq/images/tv-plus-gallery/fnb__brvfy48gzsz6_large.jpg') w-[1500px] "></div> */}
       <div >
         <img

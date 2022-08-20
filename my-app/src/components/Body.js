@@ -1,12 +1,15 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import SimpleSlider from "./SimpleSlider";
+import { useState } from "react";
 
 // slider
 
 function Body() {
+  const [play, setPlay] = useState(true);
+
   return (
     <div className="Body">
       <div className="Body-container1 grid grid-rows-3 gap-3 tracking-tighter">
@@ -149,12 +152,17 @@ function Body() {
         </div>
       </div>
       <div>
-        <SimpleSlider />
+        <SimpleSlider play={play} />
         <button
+          onClick={() => setPlay(!play)}
           // onClick={slickPause}
           className="absolute right-2"
         >
-          <img src="play.jpg" alt="" className="w-7 relative top-0.5 right-3" />
+          {play ? (
+            <img src="/pause.png" alt="pause" className="h-8" />
+          ) : (
+            <img src="play.jpg" alt="play" className="h-8" />
+          )}
         </button>
       </div>
     </div>
